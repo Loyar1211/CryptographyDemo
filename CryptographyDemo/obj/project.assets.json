@@ -1,0 +1,146 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "BouncyCastle.Crypto.dll/1.8.1": {
+        "type": "package",
+        "compile": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BouncyCastle.Crypto.dll/1.8.1": {
+      "sha512": "eT+ncIOBgR8qakQ2Oc3Le0gVAcfGNBQi0EGJlPXniRkNMpRSekWQOqUwWOMutk6g4DYu4mu4g3JYASb/50tquA==",
+      "type": "package",
+      "path": "bouncycastle.crypto.dll/1.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bouncycastle.crypto.dll.1.8.1.nupkg.sha512",
+        "bouncycastle.crypto.dll.nuspec",
+        "lib/BouncyCastle.Crypto.dll"
+      ]
+    },
+    "Portable.BouncyCastle/1.9.0": {
+      "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.9.0.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "BouncyCastle.Crypto.dll >= 1.8.1",
+      "Portable.BouncyCastle >= 1.9.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ShuaizhouZHao\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Works\\CryptographyDemo\\CryptographyDemo\\CryptographyDemo.csproj",
+      "projectName": "CryptographyDemo",
+      "projectPath": "C:\\Works\\CryptographyDemo\\CryptographyDemo\\CryptographyDemo.csproj",
+      "packagesPath": "C:\\Users\\ShuaizhouZHao\\.nuget\\packages\\",
+      "outputPath": "C:\\Works\\CryptographyDemo\\CryptographyDemo\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\ShuaizhouZHao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/BCChina/5d7fd88c-88ec-4606-affd-89fd621e3692/_packaging/BCChinaNuget/nuget/v3/index.json": {},
+        "https://pkgs.dev.azure.com/britishcouncil/NEP/_packaging/NEP_Feed@Local/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "BouncyCastle.Crypto.dll": {
+            "target": "Package",
+            "version": "[1.8.1, )"
+          },
+          "Portable.BouncyCastle": {
+            "target": "Package",
+            "version": "[1.9.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“net5.0”还原包“BouncyCastle.Crypto.dll 1.8.1”。此包可能与项目不完全兼容。",
+      "libraryId": "BouncyCastle.Crypto.dll",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

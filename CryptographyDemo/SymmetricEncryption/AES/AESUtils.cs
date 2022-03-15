@@ -45,7 +45,7 @@ namespace CryptographyDemo.SymmetricEncryption.AES
 
 		public static byte[] Pack(byte version, byte[] iv, byte[] cipherBytes)
 		{
-			return new[] { version }.Concat(iv).Concat(cipherBytes).ToArray();
+            return new[] { version }.Concat(iv).Concat(cipherBytes).ToArray();
 		}
 	}
 }

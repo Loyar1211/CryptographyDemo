@@ -375,19 +375,5 @@ namespace CryptographyDemo.HashAlgorithm.SM3
         {
             return ((X & Y) | (~X & Z));
         }
-
-        //[STAThread]
-        //public static void  Main()
-        //{
-        //    byte[] md = new byte[32];
-        //    byte[] msg1 = Encoding.Default.GetBytes("ererfeiisgod");
-        //    SM3Digest sm3 = new SM3Digest();
-        //    sm3.BlockUpdate(msg1, 0, msg1.Length);
-        //    sm3.DoFinal(md, 0);
-        //    System.String s = new UTF8Encoding().GetString(Hex.Encode(md));
-        //    System.Console.Out.WriteLine(s.ToUpper());
-
-        //    Console.ReadLine();
-        //}
     }
 }

@@ -140,9 +140,9 @@ namespace CryptographyDemo.HashAlgorithm.SM3
             long bitLength = SBufoffCount << (int)Scattered.Full;
 
             //添加字节占位
-            Update(unchecked((byte)128));
+            Update(unchecked(128));
 
-            while (SBufoff != (int)Scattered.None) Update(unchecked((int)Scattered.None));
+            while (SBufoff != 0x0) Update(unchecked((int)Scattered.None));
             ProcessLength(bitLength);
             ProcessBlock();
         }

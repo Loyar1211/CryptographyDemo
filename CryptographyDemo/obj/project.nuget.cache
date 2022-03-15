@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "E8hJHYQlx8paTdOyT6thUYTzlhXNAZhbepCE8zBOBmxarhI4h3wvjCJEMtQ3sTaYz34aNP9TpYq+LtYUpxgqLg==",
+  "success": true,
+  "projectFilePath": "C:\\Works\\CryptographyDemo\\CryptographyDemo\\CryptographyDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ShuaizhouZHao\\.nuget\\packages\\bouncycastle.crypto.dll\\1.8.1\\bouncycastle.crypto.dll.1.8.1.nupkg.sha512",
+    "C:\\Users\\ShuaizhouZHao\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“net5.0”还原包“BouncyCastle.Crypto.dll 1.8.1”。此包可能与项目不完全兼容。",
+      "libraryId": "BouncyCastle.Crypto.dll",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

@@ -76,30 +76,5 @@ namespace CryptographyDemo.SymmetricEncryption
                 return encryptSource + "=>" + ex;
             }
         }
-
-        ///// <summary>
-        ///// 创建加密签名
-        ///// </summary>
-        ///// <param name="userinfo"></param>
-        ///// <returns></returns>
-        //public string CreateSignature(string userinfo)
-        //{
-        //    var token = Guid.NewGuid().ToString("N").Substring(0, 8);
-        //    return CreateDESEncrypt(userinfo, token);
-        //}
-
-        ///// <summary>
-        ///// 获取当前随机数
-        ///// </summary>
-        ///// <returns></returns>
-        //public string GetRandomCode()
-        //{
-        //    Random rand = new Random();
-        //    int shu = rand.Next(97, 122);
-        //    char c = (char)shu;
-        //    Random randNumber = new Random();
-        //    var value = randNumber.Next(0, 99999);
-        //    return c + value.ToString().PadLeft(5, '0');
-        //}
     }
 }

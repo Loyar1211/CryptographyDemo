@@ -22,30 +22,22 @@ namespace CryptographyDemo.SymmetricEncryption.AES
         /// <returns></returns>
         public static string LowAES_Decrypt(string decryptString, string key, string ivString)
         {
-            try
-            {
 
-                key = key.PadRight(32, ' ');
-                RijndaelManaged aes = new RijndaelManaged();
+            key = key.PadRight(32, ' ');
+            RijndaelManaged aes = new RijndaelManaged();
 
-                byte[] iv = Encoding.UTF8.GetBytes(ivString.Substring(0, 16));
-                aes.Key = Encoding.UTF8.GetBytes(key.Substring(0, 32));
-                aes.Mode = CipherMode.ECB;
-                aes.IV = iv;///使用ECB其实是不需要初始化向量的
-                aes.Padding = PaddingMode.PKCS7;  //
+            byte[] iv = Encoding.UTF8.GetBytes(ivString.Substring(0, 16));
+            aes.Key = Encoding.UTF8.GetBytes(key.Substring(0, 32));
+            aes.Mode = CipherMode.ECB;
+            aes.IV = iv;///使用ECB其实是不需要初始化向量的
+            aes.Padding = PaddingMode.PKCS7;  //
 
 
-                ICryptoTransform rijndaelDecrypt = aes.CreateDecryptor();
-                byte[] inputData = Convert.FromBase64String(decryptString);
-                byte[] xBuff = rijndaelDecrypt.TransformFinalBlock(inputData, 0, inputData.Length);
+            ICryptoTransform rijndaelDecrypt = aes.CreateDecryptor();
+            byte[] inputData = Convert.FromBase64String(decryptString);
+            byte[] xBuff = rijndaelDecrypt.TransformFinalBlock(inputData, 0, inputData.Length);
 
-                return Encoding.UTF8.GetString(xBuff);
-            }
-            catch (Exception ex)
-            {
-                throw;
-
-            }
+            return Encoding.UTF8.GetString(xBuff);
         }
 
         /// <summary>
@@ -155,7 +147,7 @@ namespace CryptographyDemo.SymmetricEncryption.AES
             cs.Close();
             ms.Close();
             //return Convert.ToBase64String(decryptBytes);
-            
+
             Console.WriteLine(Encoding.UTF8.GetString(decryptBytes));
             return decryptBytes;
         }

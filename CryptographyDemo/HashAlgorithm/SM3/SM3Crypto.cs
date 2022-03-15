@@ -79,7 +79,7 @@ namespace CryptographyDemo.HashAlgorithm.SM3
 
             for (int i = 0; i < input.Length; i++)
             {
-                hexString.Append(String.Format("{0:X2}", input[i]));
+                hexString.Append(string.Format("{0:X2}", input[i]));
             }
             return hexString.ToString();
         }
